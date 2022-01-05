@@ -1,216 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Mobile first support -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <title>My resume</title>
+    <!-- Connect Bootstrap resources:-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+    <!-- <link rel="stylesheet" href="styles/styles.css"> -->
+<title>HONCHARUK Vladyslav</title>
 </head>
 <body>
-    <!--All page area-->
-    <div  class="main">
-        <!--Main content (right side)-->
-        <div class="main_content">
-            <!-- Print button -->
-            <div class="Print page">
-               <img src="Img/Printer.png" alt="Print page" title="Print resume" class="PrnIcon" onclick="window.print();return false;">
-            </div>
-            <!-- 1. About person info-->
-            <div class="About">
-                <h2 class="About_position">    
-                    IT specialist, System administrator
-                </h2>
-                <h1 class="About_name">
-                    Vladislav HONCHARUK
-                </h1>
-                <p class="About_description"><i>
-                    Melius est prudenter tacēre, quam inanĭter loqui
-                </i></p> 
-            </div>
-    
-            <!-- 2. Projects part-->
-            <div class="Projects">
-                <h3 class="Title_h3">
-                    PROJECTS
-                </h3>
-                <ol class="Lists_style">
-                    <li class="Project_item">
-                        <span class="Li_text_content_style">
-                            <a href="https://eloquent-cray-e3fd7c.netlify.app/" target="_blank" 
-                            rel="noreferrer noopener" class="Link_style">My resume site </a>
-                            ............................................... 
-                            <b class="Bold_dark_text">[</b>HTML5, CSS 3<b class="Bold_dark_text">]</b>
-                        </span>
+    <div class="container-fluid p-5 bg-primary text-white text-center">
+        <h1>My First Bootstrap Page</h1>
+        <p>Resize this responsive page to see the effect!</p>
+      </div>
+      
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col">
+            <h3>Column 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+          </div>
+          <div class="col">
+            <h3>Column 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+          </div>
+          <div class="col">
+            <h3>Column 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+          </div>
+        </div>
 
-                    </li>
-                    <li class="Project_item">
-                        <span class="Li_text_content_style">
-                            <a href="https://cutt.ly/zTOOPAV" target="_blank" rel="noreferrer noopener" 
-                            class="Link_style">Incoming files monitor</a>
-                            .................................... 
-                            <b class="Bold_dark_text">[</b>PowerShell<b 
-                            class="Bold_dark_text">]</b>
-                        </span>
-                    </li>
-                </ol>    
+        <div class="container mt-3">
+            <h2>Animated Progress Bar</h2>
+            <p>Add the .progress-bar-animated class to animate the progress bar:</p> 
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:40%"></div>
             </div>
-            <!--3. Work exp. part-->
-            <div class="Work">
-                <h3 class="Title_h3">
-                    WORK EXPERIENCE 
-                </h3>
-                <!--Company #2-->
-                <div>
-                    <h4 class="Title_h4_style">CHIEF SPECIALIST IN INFORMATION TECHNOLOGIES AND
-                        INFORMATION PROTECTION on
-                        <a href="https://cutt.ly/aTOF2VY" target="_blank" rel="noreferrer noopener" 
-                        class="Company_name_style">DEPARTMENT OF STATE TREASURY
-                            SERVICES OF UKRAINE IN SHARGOROD DISTRICT OF VINNITSA
-                            AREAS</a>
-                    </h4>
-                    <p class="Period_work">
-                        january 2012 - present day <span class="Break_style">|</span> Ukraine
-                    </p>
-                    <ul class="Lists_style">
-                        <li class="Usual_content_style">
-                            Administration of a local area network in the internal
-                            domain network of the State Treasury by means of Windows
-                            ActiveDirectory;
-                        </li>
-                        <li class="Usual_content_style">
-                            Configure and support PC antivirus protection locally
-                            institution networks;
-                        </li>
-                        <li class="Usual_content_style">
-                            Introduction of new software products, software and
-                            hardware maintenance and configuration of PC, office equipment,
-                            installation and maintenance of bank workstations;
-                        </li>
-                        <li class="Usual_content_style">
-                            Record keeping, development of orders, technical documentation,
-                            preparation and placement of tender documents on sites
-                            "Prozorro" public procurement systems;
-                        </li>
-                        <li class="Usual_content_style">
-                            Purchase of computer and network equipment, its installation
-                            and commissioning.
-                        </li>
-                    </ul>
-                </div>
-                <!--Company #1-->
-                <div>
-                    <h4 class="Title_h4_style">JUNIOR DEVELOPER 1С - 
-                        <a href="https://axioma.ua/" target="_blank" rel="noreferrer noopener" 
-                        class="Company_name_style">COMPANY "AXIOMA"</a> 
-                    </h4>
-                    <p class="Period_work">
-                        may 2011 - desember 2011 <span class="Break_style">|</span> Ukraine
-                    </p>
-                    <ul class="Lists_style">
-                        <li class="Usual_content_style">
-                            Learning the programming language 1C;
-                        </li>
-                        <li class="Usual_content_style">
-                            Teamwork to expand the functionality of existing software solutions 
-                            on the platform 1C-Enterprise v.8.2;                        
-                        </li>
-                        <li class="Usual_content_style">
-                            Teamwork to create a <a href="https://axioma.ua/bas_small_business" 
-                            class="LinkOnText_style">
-                            Small Business Management program</a> on the platform 1C-Enterprise v.8.2.                   
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- 4. Education part-->
-            <div class="Education">
-                <h3 class="Title_h3">
-                    EDUCATION
-                </h3>
-                <!--univers. name-->
-                <h4 class="Title_h4_style">
-                    <a href="https://vntu.edu.ua/" target="_blank" rel="noreferrer noopener" 
-                    class="Company_name_style">VINNITSA NATIONAL TECHNICAL UNIVERSITY</a>
-                </h4>
-                <!--Faculty name-->
-                <h4 class="Title_h4_style">
-                    <a href="https://initki.vntu.edu.ua/" target="_blank" rel="noreferrer noopener" 
-                    class="Institute_name_style">INSTITUTE OF INFORMATION TECHNOLOGIES AND COMPUTER
-                    ENGINEERING, FACULTY OF COMPUTER INTELLIGENCE, DEPARTMENT COMPUTER SCIENCES.</a>
-                </h4>
-                    <p class="Period_work">
-                        september 2006 - june 2011 <span class="Break_style">|</span> Ukraine
-                    </p>
-                    <span class="Usual_content_style">
-                        DIPLOMA IN SPECIALTY "ENGINEER-PROGRAMMER",  SPECIALIST
-                    </span>
-                    <p>
-                        Achievements: 
-                        <br>
-                            - The average score is 4.8 out of 5 maximum
-                        <br>
-                            - Publication in the scientific journal "SCIENTIFIC WORKS OF VINNITSKY
-                            OF THE NATIONAL TECHNICAL UNIVERSITY "on the topic 
-                            <a href="https://cutt.ly/1TOHAaJ" target="_blank" rel="noreferrer noopener" 
-                            class="LinkOnText_style">
-                            "System recognition of a radio-controlled trolley from a static image"</a>
-                    </p>
-            </div>
+          </div>
+      </div>
 
-        <footer class="Footer_style">
-            &copy; Vladislav Honcharuk, 2021.
-        </footer>
-        </div>  
-        <!-- End main content (right side) -->
-
-        <!-- Left sidebar -->
-        <aside class="Sidebar">
-            <img src="Img//MyPhoto.jpg" alt="My photo" class="MyPhoto">
-            <!-- My contacts -->
-            <div class="Contacts">
-                <h3 class="Sidebar_title">Contacts</h3>
-                <div>
-                    <p> 
-                        <span class="Contact_type">C:</span> 
-                        <a href="tel:+380987777777" class="Contact_link">+3 8098 777 77 77</a> 
-                    </p>
-                    <p>
-                        <span class="Contact_type" >E:</span> 
-                        <a href="mailto:era55@ukr.net" class="Contact_link">Era55@ukr.net</a> 
-                    </p>
-                </div>
-            </div>
-            <!-- Tech skills -->
-            <div class="Tech_skills">
-                <h3 class="Sidebar_title">Tech Skills</h3>
-                <ul class="Sidebar_lists">
-                    <li class="Sidebar_list_item"><span class="Sidebar_list_text">HTML5</span></li>
-                    <li class="Sidebar_list_item"><span class="Sidebar_list_text">CSS3</span></li>
-                    <li class="Sidebar_list_item"><span class="Sidebar_list_text">VScript</span></li>
-                    <li class="Sidebar_list_item"><span class="Sidebar_list_text">Git</span></li>
-                    <li class="Sidebar_list_item"><span class="Sidebar_list_text">VS Code</span></li>
-                    <li class="Sidebar_list_item"><span class="Sidebar_list_text">Photoshop</span></li>
-                </ul>
-            </div>
-                <!-- Soft skills -->
-            <div class="Soft_skills">
-                <h3 class="Sidebar_title">Soft Skills</h3>
-                <ul class="Sidebar_lists">
-                    <li class="Sidebar_list_item"><span class="Sidebar_list_text">Scrum</span></li>
-                    <li class="Sidebar_list_item"><span class="Sidebar_list_text">Agile</span></li>
-                    <li class="Sidebar_list_item"><span class="Sidebar_list_text">GTD</span></li>
-                    <li class="Sidebar_list_item"><span class="Sidebar_list_text">Teamwork</span></li>
-                </ul>
-            </div>
-
-        </aside>
-        <!-- End left sidebar frame -->
-    </div>
-    <!-- End main page frame code -->
 </body>
 </html>
